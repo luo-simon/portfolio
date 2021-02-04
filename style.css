@@ -1,0 +1,225 @@
+/* Colour Scheme
+Blurple             #7289DA
+Full White          #FFFFFF
+Greyple             #99AAB5
+Dark, but not black #2C2F33
+Not quite black     #23272A
+Actually black      #000000
+*/
+
+body {
+	font-size: 1.5px;
+	font-family: "Julius Sans One", sans-serif;
+    margin: 0px;
+    background-color: #2C2F33;
+    color: #FFFFFF;
+    overflow: hidden; /* Hide scrollbars */
+}
+
+.fill_viewport{
+	height: 100vh;
+	width: 100vw;
+}
+
+.fill_viewport_75{
+	height: 75vh;
+	width: 100vw;
+}
+
+.fill_viewport_20{
+	height: 20vh;
+	width: 100vw;
+}
+
+h1{
+    font-size: 35em;
+}
+
+h2{
+    font-size: 15em;
+    font-family: "Roboto", sans-serif;
+}
+
+.title_container{
+	top: 40vh;
+  	text-align: center;
+  	position: absolute;
+  	transform: translate(-50%, -50%);;
+    left: 50%;
+    width: 80vw;
+}
+
+.section_container{
+	margin: 15vh 5vh 5vh 5vh;
+}
+
+.subtitle{
+    font-family: "Roboto Mono", sans-serif;
+	font-size: 15em;
+    color: #7289DA;
+    font-weight: 300;
+    margin-top: 1vh;
+    word-spacing: 5px;
+}
+
+.subsubtitle{
+    font-size: 20em;
+    font-weight: 300;
+    margin-top: 1vh;
+    word-spacing: 5px;
+}
+
+.down_arrow_container{
+	position: absolute;
+    bottom: 0;
+    width: 100vw;
+    left: 0;
+    text-align: center;
+}
+
+.up_arrow_container{
+    position: absolute;
+    bottom: -15vh;
+    width: 100vw;
+    left: 0;
+    text-align: center;
+}
+
+.arrow_button{
+	font-size: 60em;
+    color: #99AAB5;
+    opacity: 0.5;
+    margin-bottom: 2vh;
+}
+
+.arrow_button:hover{
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+#blink_span {
+    animation: blinker 1s step-start infinite;
+  }
+  
+@keyframes blinker {  
+    0% { opacity: 100; }
+    50% { opacity: 0; }
+}
+
+.heading{
+	width: 100vw;
+    text-align: center;
+    font-size: 30em;
+    font-weight: 300;
+}
+
+.paragraph{
+    font-size: 18em;
+    font-weight: 300;
+    min-width: 250px;
+}
+
+.project_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    background-color: #23272A;
+    border-radius: 15px;
+}
+
+.category_card {
+    text-align: center;
+    border-radius: 15px;
+    background-color: #23272A;
+    margin: 25px 25px;
+    overflow: hidden;
+    position: relative;
+    border: 5px solid #2C2F33;
+    height: auto;
+    line-height: auto;
+}
+
+.category_card img{
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0.2;
+    position: absolute;
+    transition: 0.4s 50ms ease-in-out;
+}
+
+.category_card:hover {
+    cursor: pointer;
+    transform: scale(1.01) perspective(500px) rotateX(1deg);
+}
+.category_card img:hover{
+    opacity: 0.4;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+/* Modal Content/Box */
+.modal-content {
+    background-color: #23272A;
+    border: 5px solid #2C2F33;
+    border-radius: 15px;
+    margin: 2.5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 80vw; /* Could be more or less, depending on screen size */
+    height: 80vh;
+}
+  
+/* The Close Button */
+.close {
+    color: #99AAB5;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color:#FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.animate-zoom {
+    animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+    from{transform:scale(0)} to {transform:scale(1)}
+}
+
+.footer {
+    background-color: #23272A;
+    text-align: center;
+    padding-top: 1.5%;
+    font-size: 20em;
+}
+
+.button {
+    color: #576066;
+    transition: 0.1s ease-in-out;
+    padding: 0 5px;
+}
+
+.button:hover {
+    color: #FFFFFF;
+    transform: scale(1.2);
+    cursor: pointer;
+}
