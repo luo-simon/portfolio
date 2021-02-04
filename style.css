@@ -147,15 +147,17 @@ h2{
     min-width: 100%;
     opacity: 0.2;
     position: absolute;
-    transition: 0.4s 50ms ease-in-out;
+    transition: 0.4s ease-in-out;
+    filter: grayscale(100%);
 }
 
 .category_card:hover {
     cursor: pointer;
-    transform: scale(1.01) perspective(500px) rotateX(1deg);
+    transform: scale(1.01) perspective(500px) rotateX(1deg);   
 }
 .category_card img:hover{
     opacity: 0.4;
+    filter: grayscale(0%);
 }
 
 .modal {
