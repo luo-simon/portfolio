@@ -28,17 +28,29 @@ for (let btn of categoryBtns){
                         <h2>${project.title}</h2>\
                     </div>`;
                 }
+                modal.querySelector(".items").innerHTML = content;
+
+                let projs = document.querySelectorAll(".proj");
+                for (let p of projs) {
+                    p.addEventListener("click", () => {
+                        console.log("Clicked on project button!");
+                        for (let project of category.members){
+                            if (project.title == p.querySelector("h2").innerHTML) {
+                                content = `\
+                                <h2>${project.title}</h2>\
+                                <p>${project.desc}</p>\
+                                <a href="${project.url}" target="_blank"><button class="button">${project.button}</button></a>\
+                                <img src="${project.image}">`;
+                            }
+                            break;
+                        }
+                        projModal.querySelector(".projDetails").innerHTML = content;
+                        projModal.style.display = "block";
+                    })
+                }
+
                 break;
             }
-        }
-        console.log(content);
-        modal.querySelector(".items").innerHTML = content;
-        let projs = document.querySelectorAll(".proj");
-        for (let p of projs) {
-            p.addEventListener("click", () => {
-                console.log("Clicked on project button!");
-                projModal.style.display = "block";
-            })
         }
         modal.style.display = "block";
     })
