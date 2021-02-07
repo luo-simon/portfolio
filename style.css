@@ -263,6 +263,7 @@ p {
 
 #projectModal img {
     border-radius: 8px;
+    max-height: 45%;
     max-width: 50%;
     margin: auto;
 }
