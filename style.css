@@ -35,9 +35,12 @@ h1{
     font-size: 35em;
 }
 
-h2{
+h2 {
     font-size: 15em;
-    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 20px;
 }
 
 .title_container{
@@ -57,13 +60,6 @@ h2{
     font-family: "Roboto Mono", sans-serif;
 	font-size: 15em;
     color: #7289DA;
-    font-weight: 300;
-    margin-top: 1vh;
-    word-spacing: 5px;
-}
-
-.subsubtitle{
-    font-size: 20em;
     font-weight: 300;
     margin-top: 1vh;
     word-spacing: 5px;
@@ -119,25 +115,31 @@ h2{
     min-width: 250px;
 }
 
-.project_items {
+.items {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: stretch;
     background-color: #23272A;
-    border-radius: 15px;
+    border-radius: 8px;
+    height: 100%;
 }
 
 .category_card {
     text-align: center;
-    border-radius: 15px;
+    border-radius: 8px;
     background-color: #23272A;
     margin: 25px 25px;
     overflow: hidden;
     position: relative;
-    border: 5px solid #2C2F33;
-    height: auto;
-    line-height: auto;
+    border: 1px solid #2C2F33;
+    /* height: auto;
+    line-height: auto; */
+}
+
+.modal-content .category_card {
+    margin: 8px 0px;
 }
 
 .category_card img{
@@ -176,20 +178,28 @@ h2{
 /* Modal Content/Box */
 .modal-content {
     background-color: #23272A;
-    border: 5px solid #2C2F33;
-    border-radius: 15px;
+    border: 2px solid #2C2F33;
+    border-radius: 8px;
     margin: 2.5% auto; /* 15% from the top and centered */
-    padding: 20px;
+    padding: 0px 20px;
     width: 80vw; /* Could be more or less, depending on screen size */
     height: 80vh;
+    text-align: center;
+    position: relative;
 }
-  
+
+.modal-content h2 {
+    text-align: center;
+}
 /* The Close Button */
 .close {
+    position: absolute;
     color: #99AAB5;
-    float: right;
+    right: 10px;
+    top: 0;
     font-size: 50px;
     font-weight: bold;
+    z-index: 1;
 }
   
 .close:hover,
@@ -214,14 +224,65 @@ h2{
     font-size: 20em;
 }
 
-.button {
+.social_button {
     color: #576066;
     transition: 0.1s ease-in-out;
     padding: 0 5px;
 }
 
-.button:hover {
+.social_button:hover {
     color: #FFFFFF;
     transform: scale(1.2);
     cursor: pointer;
+}
+
+hr {
+    border-color:#576066;
+}
+
+p {
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.fill_parent_50 {
+    height: 50%;
+    position: relative;
+
+}
+
+.flex {
+    display: flex;
+    position: relative;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#projectModal img {
+    border-radius: 8px;
+    max-width: 50%;
+    margin: auto;
+}
+
+button {
+    border-radius: 5px;
+    background-color: #576066;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    border: none;
+    transition: 0.2s ease-in-out;
+    width: 20vw;
+    height: 5vh;
+    margin:auto;
+}
+
+button:hover {
+    background-color: #6b757c;
+    cursor: pointer;
+    transform: scale(1.02);
+
 }

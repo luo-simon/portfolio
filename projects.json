@@ -1,77 +1,77 @@
 [
     {
-        "category":"Web Technologies",
+        "id":"web",
         "members":[
             {
-                "title":"Project Name",
+                "title":"P O K É S E A R C H",
                 "desc":"Project Description...",
                 "button":"View Source",
                 "url":"http://proj.com",
-                "image":"img_cool.png"
+                "image":"images/other.jpg"
             },
             {
-                "title":"Project Name",
+                "title":"I T S N O T S I M O N",
                 "desc":"Project Description...",
                 "button":"View Source",
                 "url":"http://proj.com",
-                "image":"img_cool.png"
+                "image":"images/other.jpg"
             }
         ]
     },
     {
-        "category":"Python",
+        "id":"game_dev",
         "members":[
             {
-                "title":"Project Name",
+                "title":"B E Y O N D &nbsp E D E N",
                 "desc":"Project Description...",
                 "button":"View Source",
                 "url":"http://proj.com",
-                "image":"img_cool.png"
+                "image":"images/other.jpg"
             },
             {
-                "title":"Project Name",
+                "title":"T H E &nbsp R I F T",
                 "desc":"Project Description...",
                 "button":"View Source",
                 "url":"http://proj.com",
-                "image":"img_cool.png"
+                "image":"images/other.jpg"
             }
         ]
     },
     {
-        "category":"Game Development",
+        "id":"cyber",
         "members":[
             {
-                "title":"Project Name",
+                "title":"G I A C",
                 "desc":"Project Description...",
                 "button":"View Source",
                 "url":"http://proj.com",
-                "image":"img_cool.png"
+                "image":"images/other.jpg"
             },
             {
-                "title":"Project Name",
+                "title":"C Y B E R D I S C O V E R Y",
                 "desc":"Project Description...",
                 "button":"View Source",
                 "url":"http://proj.com",
-                "image":"img_cool.png"
+                "image":"images/other.jpg"
             }
         ]
     },
     {
-        "category":"Cybersecurity",
+        "id":"other",
         "members":[
             {
-                "title":"Project Name",
+                "title":"D I S C O R D &nbsp B O T",
                 "desc":"Project Description...",
                 "button":"View Source",
                 "url":"http://proj.com",
-                "image":"img_cool.png"
+                "image":"images/other.jpg"
             },
             {
-                "title":"Project Name",
+                "title":"A L G O R I T H M S",
                 "desc":"Project Description...",
                 "button":"View Source",
                 "url":"http://proj.com",
-                "image":"img_cool.png"
+                "image":"images/other.jpg"
             }
         ]
     }

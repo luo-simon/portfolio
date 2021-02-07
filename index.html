@@ -4,138 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simon</title>
-    
-    	
     <link rel="icon" type="image/png" href="/favicon.png"/>
-
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Julius+Sans+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Julius+Sans+One|Montserrat">
     
-    <script src="type.js"></script>
-    <script src="onload.js"></script>
 </head>
 <body>
-
     <div id="network_bg" class="fill_viewport"></div>
-
     <div class="title_container">
 		<h1>SIMON</h1>
 		<div class="subtitle">
 			I am a <span id="names_span"></span><span id="blink_span">_</span>
 		</div>
 	</div>
-	
     <div class="down_arrow_container">
         <i class="fas fa-angle-down arrow_button" id="scroll_btn_down"></i>
     </div>
     <div class="up_arrow_container">
         <i class="fas fa-angle-up arrow_button" id="scroll_btn_up"></i>
     </div>
-    
     <div class="fill_viewport_75">
         <div id="projects_container" class="section_container">
-            <div class="project_items">
-                <div class="category_card" id="myBtn">
+            <div class="items">
+                <div class="category_card category_btn" id="web">
                     <img src="images/web.jpg">
-                    <h2>Web</h2>
+                    <h2>W E B</h2>
                 </div>
-                <div class="category_card">
+                <div class="category_card category_btn" id="game_dev">
                     <img src="images/game_dev.png">
-                    <h2>Game Dev</h2>
+                    <h2>G A M E &nbsp D E V.</h2>
                 </div>
-                <div class="category_card">
+                <div class="category_card category_btn" id="cyber">
                     <img src="images/cyber.jpg">
-                    <h2>Cybersecurity</h2>
+                    <h2>C Y B E R S E C.</h2>
                 </div>
-                <div class="category_card">
+                <div class="category_card category_btn" id="other">
                     <img src="images/other.jpg">
-                    <h2>Other</h2>
+                    <h2>O T H E R</h2>
                 </div>
             </div>
         </div>
     </div>
-
-    <div id="myModal" class="modal">
-        <!-- Modal content -->
+    <div id="modal" class="modal">
         <div class="modal-content animate-zoom">
             <span class="close">&times;</span>
-            <h2>Some text in the Modal..</h2>
+            <div class="items">
+                <div class="category_card proj" id="portfolio">
+                    <img src="images/other.jpg">
+                    <h2>P O R T F O L I O</h2>
+                </div>
+                <div class="category_card proj">
+                    <img src="images/other.jpg">
+                    <h2>P O K É M O N</h2>
+                </div>
+            </div>
         </div>
     </div>
-
+    <div id="projectModal" class="modal">
+        <div class="modal-content animate-zoom">
+            <div class="flex">
+                <span class="close">&times;</span>
+                <h2>T I T L E</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing 
+                    elit. Unde possimus voluptatibus aliquid voluptas. 
+                    Dolorem autem facere explicabo tenetur ab illum magni 
+                    excepturi deleniti aliquam dignissimos ipsum cupiditate, 
+                    accusamus, officia cumque, nihil vitae. Amet aliquam 
+                    reiciendis perferendis nobis alias vitae itaque est 
+                    enim libero. Quasi aliquam ullam adipisci placeat, 
+                    laborum laboriosam.
+                </p>
+                <button class="button">View Source</button>
+                <img src="images/game_dev.jpg">
+            </div>
+        </div>
+    </div>
     <div class="fill_viewport_20 footer">
-        <i class="fab fa-github-square button"></i>
-        <i class="fab fa-twitter-square button"></i>
-        <i class="fab fa-linkedin button"></i>
-        <i class="fab fa-itch-io button"></i>
-        <i class="fab fa-steam-square button"></i>
-        <i class="fab fa-discord button"></i>
-        <i class="fab fa-youtube-square button"></i>
-        <i class="fab fa-twitch button"></i>
+        <i class="fab fa-github-square social_button"></i>
+        <i class="fab fa-twitter-square social_button"></i>
+        <i class="fab fa-linkedin social_button"></i>
+        <i class="fab fa-itch-io social_button"></i>
+        <i class="fab fa-steam-square social_button"></i>
+        <i class="fab fa-discord social_button"></i>
+        <i class="fab fa-youtube-square social_button"></i>
+        <i class="fab fa-twitch social_button"></i>
     </div>
 
-    <script src="three.min.js"></script>
-    <script src="vanta.net.min.js"></script>
-    <script>
-        VANTA.NET({
-            el: "#network_bg",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            color: 0x494459,
-            backgroundColor: 0x2C2F33,
-            points: 20.00,
-            maxDistance: 10.00,
-            spacing: 12.00
-        })
-    </script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript">
-		function scrollTo(id) {
-			$('html, body').animate({
-                scrollTop: $("#" + id).offset().top
-			}, 1000);
-		}
-        document.getElementById("scroll_btn_down").onclick = function () { scrollTo("scroll_btn_up"); };
-        function scrollTo(id) {
-			$('html, body').animate({
-                scrollTop: $("#" + id).offset().top
-			}, 1000);
-		}
-		document.getElementById("scroll_btn_up").onclick = function () { scrollTo("network_bg"); };
-    </script>
-
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-        // When the user clicks on the button, open the modal
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-        modal.style.display = "none";
-        }
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-
-        // Refresh page if window resized
-        window.onresize = function(event)
-        {
-            scrollTo("network_bg");
-        }
-    </script>
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="onload.js"></script>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/projectloader.js"></script>
+    <script src="scripts/resize.js"></script>
+    <script src="scripts/scroll.js"></script>
+    <script src="scripts/type.js"></script>
+    <!-- Vanta.js Dynamic Network Background -->
+    <script src="scripts/vantajs/three.min.js"></script>
+    <script src="scripts/vantajs/vanta.net.min.js"></script>
+    <script src="scripts/vantajs/vantaconfig.js"></script>
 </body>
 </html>

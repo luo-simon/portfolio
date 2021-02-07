@@ -1,3 +1,4 @@
 window.onload = function(){
-	type(); //text.js
+	type(); // type.js
+	// loadprojects(); // projectloader.js
 }
