@@ -34,6 +34,8 @@ for (let btn of categoryBtns){
                 for (let p of projs) {
                     p.addEventListener("click", () => {
                         console.log("Clicked on project button!");
+                        console.log(p.querySelector("h2").innerHTML);
+                        content = "";
                         for (let project of category.members){
                             if (project.title == p.querySelector("h2").innerHTML) {
                                 content = `\
@@ -42,7 +44,6 @@ for (let btn of categoryBtns){
                                 <a href="${project.url}" target="_blank"><button class="button">${project.button}</button></a>\
                                 <img src="${project.image}">`;
                             }
-                            break;
                         }
                         projModal.querySelector(".projDetails").innerHTML = content;
                         projModal.style.display = "block";

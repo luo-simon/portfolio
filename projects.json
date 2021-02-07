@@ -3,18 +3,39 @@
         "id":"web",
         "members":[
             {
-                "title":"P O K É S E A R C H",
-                "desc":"Project Description...",
+                "title":"P O R T F O L I O",
+                "desc":"...",
                 "button":"View Source",
-                "url":"https://github.com/luo-simon",
+                "url":"https://github.com/luo-simon/portfolio",
+                "image":"images/portfolio.png"
+            },
+            {
+                "title":"S O C I A L &nbsp; N E T W O R K",
+                "desc":"A social network for game developers and testers. I used Python and Flask for the backend, with SQLite as the databse management system, whilst HTML, CSS (and Bootstrap framework) provided the frontend visuals.",
+                "button":"View Source",
+                "url":"https://github.com/luo-simon/Game-Dev-Network",
+                "image":"images/social_net.png"
+            },
+            {
+                "title":"P H Y S I C S &nbsp; D A T A B A S E",
+                "desc":"A website containing all the terms and definitions required for A-level Physics",
+                "button":"View Source",
+                "url":"https://github.com/luo-simon/A-level-Physics-Definitions",
                 "image":"images/other.jpg"
             },
             {
-                "title":"I T S N O T S I M O N",
-                "desc":"Project Description...",
+                "title":"P O K É S E A R C H",
+                "desc":"A website for searching Pokemon stats. Data from PokeAPI",
                 "button":"View Source",
-                "url":"https://github.com/luo-simon",
-                "image":"images/other.jpg"
+                "url":"https://github.com/luo-simon/Pokemon-Search",
+                "image":"images/poke.png"
+            },
+            {
+                "title":"G A M E S",
+                "desc":"A website showcasing all of my games, made with Unity and C#",
+                "button":"View Source",
+                "url":"https://github.com/luo-simon/ItsNotSimon",
+                "image":"images/itsnotsimon.png"
             }
         ]
     },
@@ -22,18 +43,39 @@
         "id":"game_dev",
         "members":[
             {
-                "title":"B E Y O N D &nbsp E D E N",
-                "desc":"Project Description...",
-                "button":"View Source",
-                "url":"https://itsnotsimon.itch.io/",
-                "image":"images/other.jpg"
+                "title":"B E Y O N D &nbsp; E D E N",
+                "desc":"...",
+                "button":"Visit Game",
+                "url":"https://itsnotsimon.itch.io/beyond-eden",
+                "image":"images/eden.png"
             },
             {
-                "title":"T H E &nbsp R I F T",
-                "desc":"Project Description...",
-                "button":"View Source",
-                "url":"https://itsnotsimon.itch.io/",
-                "image":"images/other.jpg"
+                "title":"R I F T",
+                "desc":"...",
+                "button":"Visit Game",
+                "url":"https://itsnotsimon.itch.io/rift",
+                "image":"https://img.itch.zone/aW1nLzMwMjM0MzcuZ2lm/original/kLQ00m.gif"
+            },
+            {
+                "title":"L O N E &nbsp; S E N T R Y",
+                "desc":"...",
+                "button":"Visit Game",
+                "url":"https://itsnotsimon.itch.io/lone-sentry",
+                "image":"https://img.itch.zone/aW1hZ2UvNTk3NjI2LzMxNzYwNTEuZ2lm/347x500/xWAq59.gif"
+            },
+            {
+                "title":"E X &nbsp; U M B R I S",
+                "desc":"...",
+                "button":"Visit Game",
+                "url":"https://itsnotsimon.itch.io/ex-umbris",
+                "image":"https://img.itch.zone/aW1hZ2UvNjkzOTg5LzM4NjkzNDYucG5n/347x500/CK5iKI.png"
+            },
+            {
+                "title":"D A R K E S T &nbsp; N I G H T",
+                "desc":"...",
+                "button":"Visit Game",
+                "url":"https://itsnotsimon.itch.io/darkest-night",
+                "image":"https://img.itch.zone/aW1nLzMwNzc1NjAuZ2lm/original/s4qWJk.gif"
             }
         ]
     },
@@ -41,18 +83,25 @@
         "id":"cyber",
         "members":[
             {
-                "title":"G I A C",
-                "desc":"Project Description...",
-                "button":"View Source",
-                "url":"https://github.com/luo-simon",
-                "image":"images/other.jpg"
+                "title":"G C I H",
+                "desc":"GIAC Certified Incident Handler (GCIH).",
+                "button":"View Badge",
+                "url":"https://www.youracclaim.com/badges/d6293aed-c6bc-4971-a49f-3971cbb8da05/public_url",
+                "image":"images/gcih.png"
             },
             {
-                "title":"C Y B E R D I S C O V E R Y",
-                "desc":"Project Description...",
-                "button":"View Source",
-                "url":"https://github.com/luo-simon",
-                "image":"images/other.jpg"
+                "title":"C Y B E R E L I T E",
+                "desc":"Selected for the Elite stage of the UK CyberDiscovery Program from over 70,000 students to undertake a GIAC-certified certification, GCIH.",
+                "button":"View Badge",
+                "url":"https://eu.badgr.com/public/assertions/SrHv7cf4T1qKshxpFEZ_eg",
+                "image":"images/elite.png"
+            },
+            {
+                "title":"C F A",
+                "desc":"Received SQA certification following participation in the CyberFirst Advanced course.",
+                "button":"More Details",
+                "url":"https://www.ncsc.gov.uk/cyberfirst/courses",
+                "image":"images/cfa.png"
             }
         ]
     },
@@ -60,18 +109,25 @@
         "id":"other",
         "members":[
             {
-                "title":"D I S C O R D &nbsp B O T",
-                "desc":"Project Description...",
+                "title":"P R O J E C T &nbsp; E U L E R",
+                "desc":"My solutions for Project Euler challenges, written in C++. Although Python is my main programming language, C++ is commonly used for algorithmic/competitive programming, as it is a faster and more efficient language. Therefore, I decided to learn C++ and practise by working through Project Euler challenges.",
                 "button":"View Source",
-                "url":"https://github.com/luo-simon",
-                "image":"images/other.jpg"
+                "url":"https://github.com/luo-simon/Project-Euler-Solutions",
+                "image":"images/euler.jpg"
             },
             {
-                "title":"A L G O R I T H M S",
-                "desc":"Project Description...",
+                "title":"I N F O R M A T I C S",
+                "desc":"Solutions to BIO past papers (written in Python3/C++), as practice for BIO 2020 & 2021.",
                 "button":"View Source",
-                "url":"https://github.com/luo-simon",
-                "image":"images/other.jpg"
+                "url":"https://github.com/luo-simon/British-Informatics-Olympiad-Solutions",
+                "image":"images/bio.png"
+            },
+            {
+                "title":"W O R D L I S T &nbsp; G E N.",
+                "desc":"Wordlist Generator based on user input, made for the Fedora Project during Google Code-In 2019",
+                "button":"View Source",
+                "url":"https://github.com/luo-simon/Wordlist-Generator",
+                "image":"images/fedora.jpg"
             }
         ]
     }
