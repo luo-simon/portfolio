@@ -1,4 +1,4 @@
-words = ["student", "programmer", "game developer", "cybersecurity analyst"];
+words = ["student", "programmer", "game developer", "hacker"];
 betweenCharTime = 100;
 betweenWordTime = 2000;
 wordElement = null;
